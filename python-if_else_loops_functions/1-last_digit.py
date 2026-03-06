@@ -6,5 +6,5 @@ if last > 5:
     print(last, "is greater than 5")
 elif last == 0:
     print(last, "is 0")
-elif (last < 6 && last != 0):
+elif (last < 6 and last != 0):
     print(last, "less than 6 and not 0")
