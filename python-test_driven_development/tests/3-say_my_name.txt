@@ -31,3 +31,14 @@ Testing empty strings:
 Testing multiple words:
     >>> say_my_name("Jean-Luc", "Picard")
     My name is Jean-Luc Picard
+Testing missing arguments:
+    >>> say_my_name("John")
+    My name is John 
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+    >>> say_my_name("John", "Smith", "Junior")
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
