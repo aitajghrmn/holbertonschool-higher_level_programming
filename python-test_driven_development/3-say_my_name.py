@@ -1,9 +1,20 @@
 #!/usr/bin/python3
-"""Module that defines say_my_name function."""
+"""
+This module contains a function that prints a specific name format.
+"""
 
 
 def say_my_name(first_name, last_name=""):
-    """Prints My name is <first name> <last name>."""
+    """
+    Prints 'My name is <first_name> <last_name>'
+
+    Args:
+        first_name (str): The first name to print.
+        last_name (str): The last name to print. Defaults to empty string.
+
+    Raises:
+        TypeError: If first_name or last_name are not strings.
+    """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
